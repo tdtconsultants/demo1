@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields, api
+from odoo.exceptions import ValidationError
+from odoo.tools import formataddr
 
 class HrAppraisal(models.Model):
     _inherit = "hr.appraisal"
